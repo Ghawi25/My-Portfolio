@@ -10,23 +10,21 @@ export const HeroSection = () => {
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
+            <span className="text-primary opacity-0 animate-fade-in-delay-3">
               {" "}
-              Pedro
+              Alexander
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Machado
+              El Ghaoui
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I create stellar web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
+          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
+            I'm a 4th and last year Software Engineering student at Concordia University with a huge passion in Machine learning and game development.
           </p>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4">
+          <div className="pt-4 opacity-0 animate-fade-in-delay-5">
             <a href="#projects" className="cosmic-button">
               View My Work
             </a>

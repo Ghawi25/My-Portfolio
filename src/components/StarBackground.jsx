@@ -11,10 +11,12 @@ export const StarBackground = () => {
     generateStars();
     generateMeteors();
 
+    //handle size to generate proper amount of stars depending on screen type
     const handleResize = () => {
       generateStars();
     };
 
+    //cue for handle resize call
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
@@ -22,7 +24,7 @@ export const StarBackground = () => {
 
   const generateStars = () => {
     const numberOfStars = Math.floor(
-      (window.innerWidth * window.innerHeight) / 10000
+      (window.innerWidth * window.innerHeight) / 2500
     );
 
     const newStars = [];
@@ -42,7 +44,7 @@ export const StarBackground = () => {
   };
 
   const generateMeteors = () => {
-    const numberOfMeteors = 4;
+    const numberOfMeteors = 5;
     const newMeteors = [];
 
     for (let i = 0; i < numberOfMeteors; i++) {
@@ -81,7 +83,7 @@ export const StarBackground = () => {
           key={meteor.id}
           className="meteor animate-meteor"
           style={{
-            width: meteor.size * 50 + "px",
+            width: meteor.size * 60 + "px",
             height: meteor.size * 2 + "px",
             left: meteor.x + "%",
             top: meteor.y + "%",
