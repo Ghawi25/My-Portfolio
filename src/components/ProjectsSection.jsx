@@ -3,30 +3,50 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
+    title: "Mini Chess AI Implementation",
     description: "A beautiful landing page app using React and Tailwind.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    tags: ["Python"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Risk Game Implementation",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    image: "/projects/Risk.png",
+    tags: ["C++"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/daliabtnj/warzone",
+  },
+  {
+    id: 3,
+    title: "Condo Rental and Management Application",
+    description:
+      "Full-featured e-commerce platform with user authentication and payment processing.",
+    image: "/projects/CondoManagement.png",
+    tags: ["React", "Django", "Testing"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
-    id: 3,
-    title: "E-commerce Platform",
+    id: 4,
+    title: "Image Recognition using a LightweightCNN",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["Python", "Pytorch", "MatplotLib"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Financial Data Management System",
+    description:
+      "Full-featured e-commerce platform with user authentication and payment processing.",
+    image: "/projects/project3.png",
+    tags: ["Python", "PostgreSQL"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -100,7 +120,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/Ghawi25"
           >
             Check My Github <ArrowRight size={16} />
           </a>
