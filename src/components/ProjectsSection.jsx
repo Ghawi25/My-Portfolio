@@ -4,17 +4,17 @@ const projects = [
   {
     id: 1,
     title: "Mini Chess AI Implementation",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
+    description: "Developed a Python-based Mini Chess engine with a minimalistic UI using minimax with alpha–beta pruning and iterative deepening, achieving a ~60% win rate through refined heuristics and AI-vs-AI testing.",
+    image: "/projects/Chess.png",
     tags: ["Python"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ghawi25/MiniChessAI",
   },
   {
     id: 2,
     title: "Risk Game Implementation",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Built a fully object-oriented command-line Risk game in C++ featuring modular game phases, a connected map system, and a dynamic round-robin engine with card draws and win logic.",
     image: "/projects/Risk.png",
     tags: ["C++"],
     demoUrl: "#",
@@ -24,31 +24,40 @@ const projects = [
     id: 3,
     title: "Condo Rental and Management Application",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Developed a full-stack condo management platform using React and Django with dynamic dashboards, a backend system including automated condo fee calculations, property listings, and integrated communication tools.",
     image: "/projects/CondoManagement.png",
     tags: ["React", "Django", "Testing"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ghawi25/THE-390",
   },
   {
     id: 4,
-    title: "Image Recognition using a LightweightCNN",
+    title: "Face Recognition using a LightweightCNN",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
+      "Implemented and trained a lightweight convolutional neural network for face verification using contrastive loss, achieving efficient one-shot learning with high accuracy on facial embedding comparisons.",
+    image: "/projects/FaceVeri.png",
     tags: ["Python", "Pytorch", "MatplotLib"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Ghawi25/Face-Verification-CNN",
   },
   {
     id: 5,
     title: "Financial Data Management System",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
+      "Designed and implemented a scalable financial data pipeline by migrating from PostgreSQL to MongoDB and building validation scripts to unify datasets from multiple APIs.",
+    image: "/projects/Finance.png",
     tags: ["Python", "PostgreSQL"],
-    demoUrl: "#",
-    githubUrl: "#",
+    
+  },
+  {
+    id: 6,
+    title: "Personal Portfolio Website",
+    description:
+      "Designed and built a responsive portfolio website using React and TailwindCSS to showcase projects, skills, and personal branding with clean animations and dark mode support.",
+    image: "/projects/Portfolio.png",
+    tags: ["React", "Tailwind CSS"],
+    githubUrl: "https://github.com/Ghawi25/My-Portfolio",
+    
   },
 ];
 
@@ -56,15 +65,10 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           {" "}
           Featured <span className="text-primary"> Projects </span>
         </h2>
-
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
-        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
@@ -95,13 +99,6 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
