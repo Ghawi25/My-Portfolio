@@ -12,20 +12,21 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              I'm just a normal dude
+              A Swiss Army Knife
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              From building full-stack web applications and machine learning 
+              models to exploring systems design and data science, I enjoy diving 
+              into all layers of development. I thrive in collaborative environments 
+              where I can consult with others to tackle modern challenges.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+              Outside of coding, you'll find me training, lifitng heavy objects, 
+              watching sports in particular MMA, spending time with friends, enjoying
+              both boards games and video games, or exploring the great outdoors 
+              through various activities which fuel both my creativity and focus.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -66,8 +67,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Machine Learning</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                    Building various types of machine learning models ranging from predictive 
+                    algorithms to neural networks.
                   </p>
                 </div>
               </div>
@@ -81,7 +82,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
+                    Leading projects in multiple industries from conception to completion with agile
                     methodologies.
                   </p>
                 </div>
