@@ -8,6 +8,8 @@ import {
   Twitch,
   Twitter,
 } from "lucide-react";
+import { FaDiscord } from "react-icons/fa";
+
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -51,7 +53,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:alexanderghawi@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     alexanderghawi@gmail.com
@@ -65,7 +67,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+14383422421"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     +1 (438) 342-2421
@@ -88,17 +90,17 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="https://www.linkedin.com/in/alexander-elghaoui/" target="_blank">
+                <a href="https://www.linkedin.com/in/alexander-elghaoui/" 
+                target="_blank"
+                className="text-foreground/80 hover:text-primary transition-colors duration-300">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
-                </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+                <a
+                  href="https://discord.com/users/690896498673582091"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                  <FaDiscord className="w-6 h-6" />
                 </a>
               </div>
             </div>
