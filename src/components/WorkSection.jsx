@@ -31,7 +31,7 @@ const Work = [
     title: "IT Technician Intern",
     description: "Maintained IPTV server infrastructure for over 30,000 users and implemented encryption protocols to secure content delivery.",
     date: "June 2022 - August 2022",
-    icon: "🖥️",
+    icon: "🗄️",
     color: "hover:bg-purple-500/10",
     borderColor: "hover:border-purple-500/30"
   },
