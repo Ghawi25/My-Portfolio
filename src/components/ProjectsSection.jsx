@@ -61,10 +61,25 @@ const projects = [
   },
 ];
 
+const certificates = [
+  {
+    id: 1,
+    title: "Data Science: Foundation using R - Specialization",
+    description:
+      "Completed comprehensive specialization covering data collection, cleansing techniques, and processing datasets from various sources. Developed expertise in R programming for data manipulation and analysis.",
+    image: "/projects/DataScience.png",
+    tags: ["Data Science", "R Programming"],
+    organization: "Johns Hopkins University",
+    completionDate: "April 2023",
+  },
+];
+
+
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
+        {/* Projects Section */}
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           {" "}
           Featured <span className="text-primary"> Projects </span>
@@ -124,6 +139,63 @@ export const ProjectsSection = () => {
             Check My Github <ArrowRight size={16} />
           </a>
         </div>
+
+                {/* Certifications Section */}
+<div className="container mx-auto max-w-5xl mt-20">
+  <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+    Professional <span className="text-primary"> Certifications </span>
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {certificates.map((cert, key) => (
+      <div
+        key={key}
+        className="group relative bg-card rounded-lg overflow-hidden shadow-xs card-hover w-100"
+      >
+        <div className="h-48 overflow-hidden ">
+          <img
+            src={cert.image}
+            alt={cert.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+
+        <div className="p-6">
+          <div className="flex flex-wrap gap-2 mb-4">
+            {cert.tags.map((tag, i) => (
+              <span
+                key={i}
+                className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <h3 className="text-xl font-semibold mb-1 text-primary">
+            {cert.title}
+          </h3>
+
+          <p className="text-muted-foreground text-sm mb-2">
+            {cert.organization}
+          </p>
+
+          <p className="text-muted-foreground text-sm mb-4">
+            {cert.description}
+          </p>
+
+          <div className="flex justify-between items-center">
+            <span className="absolute bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+              Completed: {cert.completionDate}
+            </span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
       </div>
     </section>
   );
