@@ -59,6 +59,25 @@ const projects = [
     githubUrl: "https://github.com/Ghawi25/My-Portfolio",
     
   },
+  {
+    id: 7,
+    title: "Computer graphics Project using OpenGL",
+    description:
+      "Developed real-time OpenGL 3D renderers (Phong/flat/custom GLSL shaders, mesh pipeline with VAO/VBO) with screen-space mouse picking via barycentric coordinates, and a C++ ray tracer for scene-based image synthesis.",
+    image: "/projects/Graphics.png",
+    tags: ["C++", "OpenGL"],
+    
+  },
+  {
+    id: 8,
+    title: "PlayLocal Capstone project",
+    description:
+      "developped PlayLocal, a full-stack pickup-sports platform (React/Next.js, Spring Boot, PostgreSQL) with game discovery and filtering, weather forecasts on game details, request correlation IDs for backend observability, and reliability-focused features—plus CI test coverage, Docker/Flyway fixes, and API integration.",
+    image: "/projects/PlayLocal.png",
+    tags: ["Java", "Typescript", "Spring Boot"],
+    githubUrl: "https://github.com/TeamCappin/PlayLocal",
+    
+  },
 ];
 
 const certificates = [
